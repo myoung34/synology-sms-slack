@@ -7,10 +7,11 @@ name = "pypi"
 flask = "*"
 boto3 = "*"
 slacker = "*"
+werkzeug = "==0.15.3"
 
 [dev-packages]
 pytest = "*"
 "flake8" = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"

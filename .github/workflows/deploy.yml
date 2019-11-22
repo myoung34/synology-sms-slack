@@ -1,0 +1,18 @@
+name: Publish Docker
+on:
+  push:
+    branches:    
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Copy Repo Files
+      uses: actions/checkout@master
+    - name: Publish to Hub Registry
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+        name: myoung34/synology-sms-slack
+        username: ${{ secrets.DOCKER_USER }}
+        password: ${{ secrets.DOCKER_TOKEN }}
