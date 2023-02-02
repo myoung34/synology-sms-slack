@@ -7,7 +7,7 @@ name = "pypi"
 flask = "*"
 boto3 = "*"
 slacker = "*"
-werkzeug = "==0.15.3"
+werkzeug = "==0.15.5"
 
 [dev-packages]
 pytest = "*"
