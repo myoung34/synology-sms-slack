@@ -11,7 +11,7 @@ jobs:
     - name: Copy Repo Files
       uses: actions/checkout@master
     - name: Publish to Hub Registry
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: myoung34/synology-sms-slack
         username: ${{ secrets.DOCKER_USER }}
